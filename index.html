@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Portfolio</title>
+  </head>
+
+  <!-- Body -->
+  <body class="dark">
+
+      <!-- 
+        Comiezo de la cabezera
+        Creacion de los switches para cambiar de lihgt mode a Dark mode
+       -->
+    <header class="header">
+      <div class="switches">
+        <div id="toggle-theme" class="toggle-theme">
+          <img
+            id="toggle-icon"
+            src="assets/icons/moon.svg"
+            alt="icon theme"
+            class="toggle-theme__icon"
+          />
+          <p id="toggle-text" class="toggle-theme__text">Dark mode</p>
+        </div>
+      </div>
+
+
+      <!-- Trabajando en los cambios de Idiomas -->
+
+      <div id="flags" class="flags">
+        <div class="flags__item" data-language="es">
+          <img src="/assets/icons/es.svg" alt="Español" class="flags__img">
+        </div>
+        <div class="flags__item" data-language="en">
+          <img src="/assets/icons/gb.svg" alt="English" class="flags__img">
+        </div>
+      </div>
+
+
+      <!-- Toggle de los colores para la pagina -->
+
+      <div id="toggle-colors" class="colors">
+        <div
+          data-color="hsl(214, 84%, 56%)"
+          class="colors__item colors__item--blue"
+        ></div>
+        <div
+          data-color="hsl(150, 84%, 56%)"
+          class="colors__item colors__item--green"
+        ></div>
+        <div
+          data-color="hsl(276, 84%, 56%)"
+          class="colors__item colors__item--purple"
+        ></div>
+        <div
+          data-color="hsl(46, 84%, 56%)"
+          class="colors__item colors__item--orange"
+        ></div>
+      </div>
+    </header>
+    <!-- 
+      Final de la cabezera
+
+      Comienzo del main (comienzo de la seccion para los articulos del lado izquierdo)
+     -->
+    <main class="main">
+      <section class="column column--letf">
+        <!-- Articulo del perfil principla del usuario -->
+        <article class="card card--profile">
+          <div class="card__image-container">
+            <img src="/assets/images/profile.jpeg" alt="Profile image" />
+          </div>
+          <div class="card__header">
+            <h2 class="card__title no-margin">Jesus Gil</h2>
+            <p class="card__subtitle">Front end developer</p>
+          </div>
+          <div class="card__body">
+            <div class="card__link">
+              <i class="fas fa-envelope icon"></i>
+              <a href="mailto:jesus2002325@gmail.com">jesus2002325@gmail.com</a>
+            </div>
+            <div class="card__link">
+              <i class="fas fa-phone-alt icon"></i>
+              <a href="tel:+584242547883">+58-4242547883</a>
+            </div>
+          </div>
+          <p class="card__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            iusto vel illo at sunt magni, ratione itaque tenetur sit libero
+            totam animi blanditiis, dolores natus. Nostrum ipsum nesciunt
+            provident assumenda. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Officiis deserunt ut, molestias voluptates quidem
+            eius, iure unde quis veniam doloribus aliquam at deleniti saepe
+            officia cupiditate debitis labore cumque neque!
+          </p>
+        </article>
+
+
+        <!-- Articulo de las experiencia -->
+        <article class="card card--experience">
+          <h2 class="card__title">Experiences</h2>
+          <div class="experience">
+            <img
+              src="/assets/images/logo.png"
+              alt="Logo"
+              class="experience__image"
+            />
+            <div class="experience__info">
+              <p class="experience__time">Feb 2017 - Current</p>
+              <h3 class="experience__job">Front End Developer</h3>
+              <p class="experiencie__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                assumenda accusantium odio! Velit fuga, quis eius sapiente earum
+                sed nihil unde recusandae sequi in deleniti autem neque
+                blanditiis a quia.
+              </p>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- Articulo de los Hobbies -->
+        <article class="card card--hobbies">
+          <h2 class="card__title">Hobbies</h2>
+          <div class="card__image-container">
+            <img src="/assets/images/hobbie.jpg" alt="Man on a bike" />
+          </div>
+          <h3 class="hobbie__title">Biking</h3>
+          <p class="card__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+            labore, optio dolore porro suscipit natus sit accusamus nesciunt
+            dolor! Vel repudiandae voluptates numquam labore in eveniet
+            laboriosam sunt aspernatur officiis!
+          </p>
+        </article>
+      </section>
+
+      <!-- 
+        Finaliza la seccion para todos los articulos del lado izquierdo del portfolio
+
+        Comienza la seccion para todos los articulos del lado Derecho del portfolio
+       -->
+
+      <section class="column column--right">
+
+        <!-- Articulo para las habilidades del usuario (Desarrollo web)-->
+        <article class="card">
+          <h2 class="card__title">Desarrolo web</h2>
+          <small>Años de experiencia</small>
+          <div class="skills">
+            <div class="skills__header">
+              <span class="skills__start-level">0</span>
+              <span class="skills__start-level">5</span>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">HTML</p>
+              <div class="skills__bar skills__bar--80"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">CSS</p>
+              <div class="skills__bar skills__bar--90"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">JavaScript</p>
+              <div class="skills__bar skills__bar--60"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Articulo para las habilidades del usuario (Software)-->
+        <article class="card">
+          <h2 class="card__title">Software</h2>
+          <div class="skills">
+            <div class="skills__item">
+              <p class="skills__tech">Visual</p>
+              <div class="skills__bar skills__bar--80"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">CSS</p>
+              <div class="skills__bar skills__bar--90"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">JavaScript</p>
+              <div class="skills__bar skills__bar--60"></div>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+
+          <!-- Articulo para las habilidades del usuario (Diseño)-->
+          <h2 class="card__title">Design</h2>
+          <div class="skills">
+            <div class="skills__item">
+              <p class="skills__tech">HTML</p>
+              <div class="skills__bar skills__bar--80"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">CSS</p>
+              <div class="skills__bar skills__bar--90"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">JavaScript</p>
+              <div class="skills__bar skills__bar--60"></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Articulo de los proyectos del usuario -->
+        <article class="card card--project">
+          <div class="card__image-container">
+            <img
+              src="/assets/images/project.jpg"
+              alt="Landing page"
+              class="card__image"
+            />
+          </div>
+          <div class="project">
+            <div class="project__tags">
+              <span class="project__tag">#HTML</span>
+              <span class="project__tag">#CSS</span>
+              <span class="project__tag">JavaScript</span>
+              <span class="project__tag">#Responsive</span>
+            </div>
+            <h2 class="card__title">Landing page</h2>
+            <p class="card__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              aut repellat, hic consectetur laboriosam a similique repudiandae!
+              Architecto debitis optio asperiores commodi numquam obcaecati
+              dicta aperiam expedita, voluptate ipsum vero.
+            </p>
+            <p class="card__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              aut repellat, hic consectetur laboriosam a similique repudiandae!
+              Architecto debitis optio asperiores commodi numquam obcaecati
+              dicta aperiam expedita, voluptate ipsum vero.
+            </p>
+            <div class="buttons">
+              <a href="#" class="button button--primary">Demo</a>
+              <a href="#" class="button button--ghost">Code</a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <!-- 
+      Final del main
+            y
+      cierre de la seccion para todos los articulos del lado Derecho del portfolio
+
+     -->
+
+    <!-- archivo de JavaScript -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
